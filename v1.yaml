@@ -5,6 +5,7 @@ components:
   type: docker
   versions:
   - version: 0.1.0
+    latest: true
     image: "hashicorp/terraform:0.12.28"
     workdir: "/terraform"
     commands:
