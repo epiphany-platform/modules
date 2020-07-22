@@ -1,0 +1,15 @@
+version: v1
+kind: Repository
+components:
+- name: c1
+  type: docker
+  versions:
+  - version: 0.1.0
+    image: "hashicorp/terraform:0.12.28"
+    workdir: "/terraform"
+    commands:
+    - name: init
+      description: "initializes terraform in local directory"
+      command: init
+      envs:
+        TF_LOG: WARN
