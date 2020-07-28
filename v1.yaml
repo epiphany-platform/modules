@@ -21,3 +21,20 @@ components:
         TF_LOG: DEBUG
       args:
       - -auto-approve
+- name: luuk-c1
+  type: docker
+  versions:
+  - version: 0.0.1
+    latest: true
+    image: "docker.io/luukvv/component1:0.0.1"
+    workdir: "/component"
+    commands:
+    - name: info
+      description: "provides info"
+      command: info
+    - name: init
+      description: "initializes something"
+      command: init
+    - name: apply
+      description: "applies something"
+      command: apply
