@@ -18,4 +18,6 @@ components:
       description: "applies terraform in local directory"
       command: apply
       envs:
-        TF_LOG: WARN
+        TF_LOG: DEBUG
+      args:
+      - -auto-approve
