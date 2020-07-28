@@ -8,6 +8,8 @@ components:
     latest: true
     image: "docker.io/hashicorp/terraform:0.12.28"
     workdir: "/terraform"
+    mounts: 
+    - "/terraform"
     commands:
     - name: init
       description: "initializes terraform in local directory"
@@ -27,7 +29,6 @@ components:
   - version: 0.0.1
     latest: true
     image: "docker.io/luukvv/component1:0.0.1"
-    workdir: "/component"
     commands:
     - name: info
       description: "provides info"
