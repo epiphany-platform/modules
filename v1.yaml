@@ -14,3 +14,8 @@ components:
       command: init
       envs:
         TF_LOG: WARN
+    - name: apply
+      description: "applies terraform in local directory"
+      command: apply
+      envs:
+        TF_LOG: WARN
