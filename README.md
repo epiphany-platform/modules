@@ -1,2 +1,3 @@
-# epiphany-wrapper-poc-repo
-example repository for epiphany-wrapper-poc
+# epiphany modules repository
+
+default modules repository for [epiphany cli wrapper](https://github.com/epiphany-platform/cli)
